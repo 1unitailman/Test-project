@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test task</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
+    <link
+      rel="preload"
+      href="./fonts/Gilroy-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -46,28 +54,24 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-heading">
+      <section class="hero">
         <div class="overlay"></div>
         <div class="container">
           <div class="content">
-            <article
+            <div
               class="content-left"
               data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="3000"
-              data-aos-delay="1000"
+              data-aos-duration="2000"
             >
               <p>Lorem Ipsum is simply dummy text of the printing</p>
               <h1>
                 Company <br />
                 Name
               </h1>
-            </article>
-
-            <aside
+            </div>
+            <div
               class="content-right"
               data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
               data-aos-duration="2000"
               data-aos-delay="1000"
             >
@@ -76,7 +80,7 @@
                 printing <span>and typesetting</span> <br />industry.
               </p>
               <a href="#" class="button">Select property</a>
-            </aside>
+            </div>
           </div>
         </div>
       </section>
@@ -142,26 +146,33 @@
               </button>
             </div>
           </div>
-          <div class="projects-info">
-            <article>
-              <span
-                >Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.</span
-              >
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic
-              typesetting, remaining.
-            </article>
-          </div>
-          <div class="heading-info">
-            <p>More than 10 years</p>
+        </div>
+
+        <div class="projects-text-content-wrapper">
+          <div class="projects-text-content">
+            <div class="projects-info">
+              <article>
+                <span
+                  >Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.</span
+                >
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining.
+              </article>
+            </div>
+            <div class="heading-info">
+              <p>More than 10 years</p>
+            </div>
           </div>
         </div>
       </div>
-      <img src="./images/block_3/bg-block3.png" alt="Footer Background" />
-      <img src="./images/block_3/Intersect(1).png" alt="" />
+
+      <div class="block-bg">
+        <img src="./images/block_3/bg-block3.png" alt="Background" />
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
